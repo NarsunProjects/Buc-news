@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,56 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYH-0Y-2h5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="yHz-lt-s3N">
+                                        <rect key="frame" x="102" y="243" width="171" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="6Hg-Xc-nta"/>
+                                            <constraint firstAttribute="width" constant="171" id="8kD-ir-7KH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUCNEWS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xk-wO-ntc">
+                                        <rect key="frame" x="102" y="431" width="171" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="P8g-5q-l32"/>
+                                            <constraint firstAttribute="width" constant="171" id="x5r-88-gQl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yHz-lt-s3N" firstAttribute="centerX" secondItem="LYH-0Y-2h5" secondAttribute="centerX" id="U65-aU-Cjd"/>
+                                    <constraint firstItem="yHz-lt-s3N" firstAttribute="centerY" secondItem="LYH-0Y-2h5" secondAttribute="centerY" id="eph-ZX-V0l"/>
+                                    <constraint firstItem="8xk-wO-ntc" firstAttribute="top" secondItem="yHz-lt-s3N" secondAttribute="bottom" constant="8" id="iR2-2m-mej"/>
+                                    <constraint firstItem="8xk-wO-ntc" firstAttribute="leading" secondItem="yHz-lt-s3N" secondAttribute="leading" id="ySu-bC-eh9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LYH-0Y-2h5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Fih-wG-21E"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="LYH-0Y-2h5" secondAttribute="bottom" id="HgH-eU-xCO"/>
+                            <constraint firstAttribute="trailing" secondItem="LYH-0Y-2h5" secondAttribute="trailing" id="KVl-jO-8jw"/>
+                            <constraint firstItem="LYH-0Y-2h5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="cP2-K5-gcH"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="LYH-0Y-2h5" secondAttribute="bottom" id="dSZ-id-p8C"/>
+                            <constraint firstItem="LYH-0Y-2h5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ndF-GK-duG"/>
+                            <constraint firstAttribute="trailing" secondItem="LYH-0Y-2h5" secondAttribute="trailing" id="s5U-3t-os9"/>
+                            <constraint firstItem="LYH-0Y-2h5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="v0h-vD-7Eg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="784" height="948"/>
+    </resources>
 </document>

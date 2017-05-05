@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+
+    IBOutlet UITextField *txt_cpassword;
+    IBOutlet UITextField *txt_password;
+    IBOutlet UITextField *txt_email;
+    IBOutlet UITextField *txt_name;
+    NSString *token;
+
+}
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 
 
 @end
